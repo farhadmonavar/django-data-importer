@@ -40,11 +40,11 @@
           <!-- show logout button -->
           <div>
             Logged in as: <b>{{ user }}</b>
-            &nbsp;<a href="" class="float-right btn btn-outline-danger">Logout</a>
+            &nbsp;<a href="{% url 'logout' %}" class="float-right btn btn-outline-danger">Logout</a>
           </div>
           {% else %}
           <div>
-            <a href="" class="float-right text-decoration-none text-dark">Login</a>
+            <a href="{% url 'login' %}" class="float-right text-decoration-none text-dark">Login</a>
             &nbsp;<a href="{% url 'register' %}" class="float-right btn btn-success">Register</a>
           </div>
           {% endif %}
