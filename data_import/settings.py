@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'dataentry',
     'uploads',
+    'crispy_forms',
+    'crispy_bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -153,3 +155,5 @@ MESSAGE_TAGS = {
 }
 
 CELERY_BROKER_URL = 'redis://localhost:6379/0'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
