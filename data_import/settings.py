@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap5',
     'email_service',
+    'ckeditor',
+    'anymail',
 ]
 
 MIDDLEWARE = [
@@ -158,3 +160,9 @@ MESSAGE_TAGS = {
 CELERY_BROKER_URL = 'redis://localhost:6379/0'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'height': 200,
+    },
+}
